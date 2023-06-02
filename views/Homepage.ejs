@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/general.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/queries.css" />
+
+  <title>Coffee Shop</title>
+</head>
+
+<body>
+  <header class="header flex">
+    <nav class="main-nav">
+      <ul class="main-nav-list flex">
+        <li><a class="link main-nav-link active" href="/">Home</a></li>
+        <li><a class="link main-nav-link" href="/offers">Offers</a></li>
+        <li><a class="link main-nav-link" href="/products">Products</a></li>
+        <li><a class="link main-nav-link" href="/crew">Crew</a></li>
+        <li><a class="link main-nav-link" href="/info">Info</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section-hero">
+      <div class="container grid grid--2-col .grid--center-v">
+        <div class="hero-content-box">
+          <h1 class="heading-primary">
+            All you need is our delicious
+            coffee
+          </h1>
+          <p class="hero-description">
+            We are the best coffee maker in the town and always ready to serve
+            you with absolutely the best quality coffee
+          </p>
+          <a href="/products" class="btn btn-hero">Shop now</a>
+        </div>
+        <div class="hero-img-box">
+          <img class="hero-img" src="/images/coffee.jpg" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container grid-footer">
+      <div class="footer--shop">
+        <div class="shop">
+
+          <p><%= shop[0].shop_name %></p>
+        </div>
+        <p class="shop-text">
+          What we can do? <br />
+          Serving the best coffee for you
+        </p>
+      </div>
+
+      <!-- CONTACTS -->
+      <div class="footer--contact">
+        <p class="contact-title">Contact</p>
+        <ul class="list">
+          <li class="list-item">
+            <i class="ri-mail-fill icon-contact"></i>
+            <a class="link-footer"><%= shop[0].shop_email %></a>
+          </li>
+          <li class="list-item">
+            <i class="ri-phone-fill icon-contact"></i>
+            <a class="link-footer"><%= shop[0].shop_contactno %></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="" async defer></script>
+</body>
+
+</html>

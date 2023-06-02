@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/queries.css" />
+</head>
+
+<body>
+    <header class="header flex">
+        <nav class="main-nav">
+            <ul class="main-nav-list flex">
+                <li><a class="link main-nav-link" href="/homepage">Home</a></li>
+                <li><a class="link main-nav-link" href="/offers">Offers</a></li>
+                <li><a class="link main-nav-link" href="/products">Products</a></li>
+                <li><a class="link main-nav-link active" href="">Crew</a></li>
+                <li><a class="link main-nav-link" href="/info">Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section section-crew">
+            <div class="container grid grid--2-col">
+                <div class="crew-img-box">
+                    <img class="crew-img" src="/images/manager.jpg" />
+                </div>
+                <div class="crew-content-box">
+                    <h2 class="heading-secondary">
+                        Discover our crew!
+                    </h2>
+                    <ul class="list">
+                        <!-- First list -->
+                        <li class="list-info">
+                            <div class="info">
+                                <i class="fa-regular fa-user icon"></i>
+                                <p class="crew-info">Manager Name</p>
+                            </div>
+                            <p class="paragraph info-text">
+                                <%= manager[0].manager_name %>
+                            </p>
+                        </li>
+
+                        <!-- Second list -->
+                        <li class="list-info">
+                            <div class="info">
+                                <i class="fa-regular fa-envelope icon"></i>
+                                <p class="crew-info">Email</p>
+                            </div>
+                            <p class="paragraph info-text">
+                                <%= manager[0].manager_email %>
+                            </p>
+                        </li>
+
+                        <!-- Third list -->
+                        <li class="list-info">
+                            <div class="info">
+                                <i class="fa-solid fa-mobile-screen icon"></i>
+                                <p class="crew-info">Phone Number</p>
+                            </div>
+                            <p class="paragraph info-text">
+                                <%= manager[0].manager_contactno %>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="" async defer></script>
+</body>
+
+</html>

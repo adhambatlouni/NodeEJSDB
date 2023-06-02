@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/option.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="flex">
+        <div class="wrapper">
+            <form action="/addOrder" method="post">
+
+                <select name="c_id">
+                    <option>Customer ID</option>
+                    <% for (var i=0; i < customer.length; i++) { %>
+                    <option value=" <%= customer[i].customer_id %>">
+                        <%= customer[i].customer_fn %>
+                        <%= customer[i].customer_ln %>
+                        <%= customer[i].customer_id %>
+                    </option>
+                    <% } %>
+                </select>
+
+                <select name="i_id">
+                    <option>Item Name</option>
+                    <% for (var i=0; i < item.length; i++) { %>
+                    <option value=" <%= item[i].item_id %>">
+                        <%= item[i].item_id %>
+                        <%= item[i].item_name %>
+                        <%= item[i].item_price %>$
+                    </option>
+                    <% } %>
+                </select>
+
+                <select name="m_id">
+                    <option>Manager ID</option>
+                    <option value=" <%= manager[0].manager_id %>">
+                        <%= manager[0].manager_name %>
+                        <%= manager[0].manager_id %>
+                    </option>
+                </select>
+                <button type="submit" class="btn">Add order</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="" async defer></script>
+</body>
+
+</html>

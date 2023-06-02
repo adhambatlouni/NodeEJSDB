@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Login</h1>
+        <form action="/customerLogin" method="post">
+            <input type="text" name="fn" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <div class="recover"><a href="#">Forget Password?</a></div>
+            <button type="submit" class="btn">Login<a href="/api/loginCustomer"></a></button>
+        </form>
+        <div class="member">Not a member? <a href="/signup">Register Now</a></div>
+    </div>
+    <script src="" async defer></script>
+</body>
+
+</html>
